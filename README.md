@@ -1,7 +1,3 @@
-Here is the reformatted content in a clean, structured Markdown format optimized for a GitHub repository or documentation page.
-
----
-
 # KarpenterConfiguration
 
 This repository contains the configuration and definitions for **Karpenter**, a high-performance Kubernetes node autoscaling solution. It defines how the cluster provisions nodes in response to unschedulable pods.
