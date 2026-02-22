@@ -1,0 +1,9 @@
+fileignoreconfig:
+- filename: nodepools/default.yaml
+  checksum: e70f91a5bec1789866ff59d08b41e468917acb34bf7fb5d508aa4b8f37adc16a
+- filename: nodepools/system.yaml
+  checksum: 5663cfb5c10d2264aebefd10d08be7738585f3f3e6a56ddf2aa716a050b7817c
+- filename: nodepools/gpu-workload.yaml
+  checksum: 5d3d8f1bb307292b74792e6cfd2b1d4c0a52f431ffdba875abee03575f5c98f8
+- filename: README.md
+  checksum: e425dba3154fe1047c20084644deff5e69d7189a33ffe79e7bf40930f59534be
