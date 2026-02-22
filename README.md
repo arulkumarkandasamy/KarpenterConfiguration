@@ -162,9 +162,3 @@ spec:
 * **Nodes are not consolidating (scaling down):**
 * Check if pods have `karpenter.sh/do-not-disrupt: "true"` annotation.
 * Ensure `disruption.consolidationPolicy` is set to `WhenUnderutilized`.
-
-
-
----
-
-**Would you like me to help you create a specific `system.yaml` NodePool for your critical control-plane add-ons?**
