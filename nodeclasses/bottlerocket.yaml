@@ -1,0 +1,14 @@
+apiVersion: karpenter.k8s.aws/v1
+kind: EC2NodeClass
+metadata:
+  name: bottlerocket
+spec:
+  amiFamily: Bottlerocket
+  role: "KarpenterNodeRole-my-cluster-name"
+  subnetSelectorTerms:
+    - tags:
+        karpenter.sh/discovery: "my-cluster-name"
+  securityGroupSelectorTerms:
+    - tags:
+        karpenter.sh/discovery: "my-cluster-name"
+  # Bottlerocket specific settings can be added here (e.g., settings/kernel)

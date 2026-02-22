@@ -1,0 +1,23 @@
+apiVersion: karpenter.sh/v1
+kind: NodePool
+metadata:
+  name: system
+spec:
+  template:
+    spec:
+      nodeClassRef:
+        group: karpenter.k8s.aws
+        kind: EC2NodeClass
+        name: bottlerocket # Using the secure OS for system pods
+      requirements:
+        - key: "karpenter.sh/capacity-type"
+          operator: In
+          values: ["on-demand"] # Critical pods should stay on On-Demand
+        - key: "karpenter.k8s.aws/instance-size"
+          operator: NotIn
+          values: ["nano", "micro", "small"]
+  # Faster consolidation for system nodes isn't always better; 
+  # we want stability here.
+  disruption:
+    consolidationPolicy: WhenEmpty
+    consolidateAfter: 30m

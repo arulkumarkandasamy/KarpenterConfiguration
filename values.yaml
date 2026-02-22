@@ -1,0 +1,17 @@
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::123456789012:role/KarpenterControllerRole
+
+settings:
+  clusterName: my-cluster-name
+  interruptionQueue: karpenter-my-cluster-name # For Spot termination handling
+
+# Resources for the controller itself
+controller:
+  resources:
+    requests:
+      cpu: 1
+      memory: 1Gi
+    limits:
+      cpu: 1
+      memory: 1Gi
