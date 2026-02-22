@@ -6,4 +6,4 @@ fileignoreconfig:
 - filename: nodepools/gpu-workload.yaml
   checksum: 5d3d8f1bb307292b74792e6cfd2b1d4c0a52f431ffdba875abee03575f5c98f8
 - filename: README.md
-  checksum: e425dba3154fe1047c20084644deff5e69d7189a33ffe79e7bf40930f59534be
+  checksum: c98be23733c32514d52dc7a1820c0e9490adb9c881a99f2f55a4159a6b9dc7bd
